@@ -1,7 +1,4 @@
-#Creating a Loop 200 times.
-while ($i -lt 200)
-{
-$i++
+
 #Creating the GUI
 Add-Type -AssemblyName Microsoft.VisualBasic
 $number = [Microsoft.VisualBasic.Interaction]::InputBox('Enter Search String eg. Part of Foldername', 'Titel -OpenTheFolder', "$env:RMNumber")
@@ -16,4 +13,4 @@ $pfad = Get-ChildItem "FOLDERPATH"  | Where-Object {$_.PSIsContainer -eq $true -
 ii $pfad.PSPath
 
 }
-}
+
